@@ -4,9 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convert UI to HTML,CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="textcolor-default">
+    <header class="header">
+      <div class="header__top">
+        <div class="logo">
+          <h1 class="logo__text fs-24 t-capitalized">
+            <a href="#" class="logo__link fs-24 fw-700">brandname</a>
+          </h1>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list nav__list--headmenu fw-700">
+            <li class="nav__item">
+              <a href="#" class="nav__link mr-16 textcolor-gray">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link mr-16 textcolor-gray">Product</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link mr-16 textcolor-gray">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link textcolor-gray">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--headbtn">
+            <li class="nav__item">
+              <a href="#" class="nav__link fw-700 textcolor-primary fs-14 mr-46"
+                >Login</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link btn btn--primary fw-700 fs-14">
+                <!-- <div class="btn btn--primary fw-700 fs-14"> -->
+                  Join US
+                  <img
+                    src="/assets/images/arrow_next.png"
+                    alt="arrow next"
+                    class="btn__icon"
+                  />
+                <!-- </div> -->
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- header bottom  -->
+      <div class="header__bottom">
+        <div class="hero">
+          <div class="hero__info">
+            <h5 class="hero__badge textcolor-primary">
+              Welcome
+            </h5>
+            <h1 class="hero__heading">
+              Best Learning Opportunities
+            </h1>
+            <p class="hero__text">
+              Our goal is to make online education work for everyone
+            </p>
+            <div class="hero__groupBtn">
+              <div class="hero__groupBtn--joinUs btn btn--primary">Join Us</div>
+              <div class="hero__groupBtn--learnMore btn btn--default">Learn More</div>
+            </div>
+          </div>
+          <div class="hero__img">
+            <img
+              src="/assets/images/banner_girl_1.png"
+              alt="Girl UI"
+              class="hero__img--banner"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main"></main>
+
+    <footer class="footer"></footer>
+
     <script src="/js/script.js"></script>
   </body>
 </html>
