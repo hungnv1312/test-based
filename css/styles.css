@@ -196,6 +196,7 @@ body {
 /* ======================= HEADER ============== */
 
 .header {
+  overflow: hidden;
   width: 100%;
   background-color: #fff2f3;
 }
