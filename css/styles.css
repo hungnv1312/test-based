@@ -46,6 +46,7 @@ ul {
 }
 a {
   color: #252b42;
+  display: inline-block;
 }
 /* ================== COMMON ================ */
 /* width  */
@@ -71,6 +72,7 @@ a {
   padding: 16px 26px;
   border: 1px solid transparent;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn__icon {
@@ -159,46 +161,8 @@ a {
   margin-right: 46px;
 }
 
-body {
-  /* color: #252b42; */
-  font-family: 'Montserrat', sans-serif;
-}
-/* ======================= HEADER ============== */
-
-.header {
-  width: 100%;
-  /* width: 1440px; */
-  margin: 0 auto;
-  /* display: flex; */
-  background-color: #fff2f3;
-}
-
-.header .header__top {
-  padding-top: 18px;
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-  width: 1065px;
-  margin: auto 185px;
-}
-
-.header .header__bottom {
-  padding-top: 24px;
-}
-
-.logo {
-  margin-right: 85px;
-}
-
-.logo .logo__text {
-}
-
-.logo .logo__link {
-  text-decoration: none;
-}
-
 .nav {
-  width: 70%;
+  /* width: 70%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -213,6 +177,7 @@ body {
 
 .nav .nav__link {
   text-decoration: none;
+  color: #737373;
 }
 
 .nav__list--headbtn {
@@ -224,6 +189,119 @@ body {
   flex-direction: column;
 }
 
+body {
+  /* color: #252b42; */
+  font-family: 'Montserrat', sans-serif;
+}
+/* ======================= HEADER ============== */
+
+.header {
+  width: 100%;
+  background-color: #fff2f3;
+}
+
+.header__top {
+  width: 1040px;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 301px;
+}
+
+.logo__text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.logo__link {
+  text-decoration: none;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+}
+
+.header__item:not(:last-child) {
+  margin-right: 19px;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #737373;
+}
+
+.header__groupBtn {
+  display: flex;
+  align-items: center;
+  width: 299px;
+}
+
+.header__listBtn {
+}
+
+.header__linkBtn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__linkBtn--login {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: #96bb7c;
+}
+
+.header__linkBtn--joinUs {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #fff;
+  padding: 15px 30px;
+  background: #96bb7c;
+  border-radius: 5px;
+}
+
+.header__linkBtn--Arrow {
+  margin-left: 6px;
+}
+
+.header__listBtn--login {
+  margin-right: 50px;
+}
+
+.header__bottom {
+  padding-top: 24px;
+}
+
 .hero {
   /* margin-top: 91px; */
   width: 100%;
@@ -232,26 +310,26 @@ body {
   justify-content: space-between;
 }
 
-.hero .hero__info {
+.hero__info {
   padding-top: 152px;
   padding-left: 133px;
 }
 
-.hero .hero__badge {
+.hero__badge {
   margin-bottom: 31px;
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
 }
 
-.hero .hero__heading {
+.hero__heading {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 56px;
   line-height: 80px;
 }
 
-.hero .hero__text {
+.hero__text {
   color: #737373;
   line-height: 30px;
   font-size: 20px;
@@ -260,19 +338,19 @@ body {
   font-weight: 600;
 }
 
-.hero .hero__groupBtn {
+.hero__groupBtn {
 }
 
-.hero .hero__groupBtn--joinUs {
+.hero__groupBtn--joinUs {
   padding: 16px 35px;
 }
 
-.hero .hero__groupBtn--learnMore {
+.hero__groupBtn--learnMore {
   padding: 16px 34px;
   margin-left: 8px;
 }
 
-.hero .hero__img {
+.hero__img {
 }
 
 .hero__img--banner {
@@ -465,6 +543,7 @@ body {
 }
 
 .card__icon {
+  cursor: pointer;
 }
 
 .card__icon--img {

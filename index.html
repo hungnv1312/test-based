@@ -14,44 +14,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="textcolor-default">
+    <!-- HEADER  -->
     <header class="header">
       <div class="header__top">
         <div class="logo">
-          <h1 class="logo__text fs-24 t-capitalized">
-            <a href="#" class="logo__link fs-24 fw-700">brandname</a>
+          <h1 class="logo__text">
+            <a href="#" class="logo__link">brandname</a>
           </h1>
         </div>
-        <nav class="nav">
-          <ul class="nav__list nav__list--headmenu fw-700">
-            <li class="nav__item">
-              <a href="#" class="nav__link mr-16 textcolor-gray">Home</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link mr-16 textcolor-gray">Product</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Product</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link mr-16 textcolor-gray">Pricing</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Pricing</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link textcolor-gray">Contact</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Contact</a>
             </li>
           </ul>
-          <ul class="nav__list nav__list--headbtn">
-            <li class="nav__item">
-              <a href="#" class="nav__link fw-700 textcolor-primary fs-14 mr-46"
-                >Login</a
-              >
+          <!-- Login/ Join US Btn  -->
+          <ul class="header__groupBtn">
+            <li class="header__listBtn header__listBtn--login">
+              <a href="#" class="header__linkBtn header__linkBtn--login">Login</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link btn btn--primary fw-700 fs-14">
-                <!-- <div class="btn btn--primary fw-700 fs-14"> -->
-                Join US
-                <img
-                  src="/assets/images/arrow_next.png"
-                  alt="arrow next"
-                  class="btn__icon"
-                />
-                <!-- </div> -->
+            <li class="header__listBtn">
+              <a href="#" class="header__linkBtn header__linkBtn--joinUs">
+                <span>Join Us</span>
+                <img src="/assets/images/arrow_next.png" alt="Arrow Next" class="header__linkBtn--Arrow">
               </a>
             </li>
           </ul>
@@ -83,7 +77,7 @@
         </div>
       </div>
     </header>
-
+    <!-- MAIN  -->
     <main class="main">
       <!-- Package -->
       <sectoion class="package">
@@ -276,6 +270,7 @@
     <!-- FOOTER  -->
     <footer class="footer">
       <div class="footer__head">
+        <!-- FOOTER WRAPPER  -->
         <div class="footer__wrapper">
           <h3 class="footer__heading">Company Info</h3>
           <nav class="footer__nav">
