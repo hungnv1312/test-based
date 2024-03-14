@@ -209,7 +209,36 @@ body {
   margin: 0 auto;
 }
 
+.header__hamburger {
+  display: none;
+  cursor: pointer;
+  width: 32px;
+}
+
+.header__hamburger--actived .header__hamburger--bar-1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.header__hamburger--actived .header__hamburger--bar-2 {
+  opacity: 0;
+}
+
+.header__hamburger--actived .header__hamburger--bar-3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.header__hamburger--bar-1,
+.header__hamburger--bar-2,
+.header__hamburger--bar-3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
 .header__nav {
+  transition: 0.4s;
   width: 100%;
   display: flex;
   align-items: center;
@@ -661,8 +690,54 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+  .header__hamburger {
+    display: block;
+  }
+
+  .header__hamburger--actived .header__hamburger--bar-1,
+  .header__hamburger--actived .header__hamburger--bar-2,
+  .header__hamburger--actived .header__hamburger--bar-3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
   .header__nav {
-    display: none;
+    display: visible;
+    opacity: 0;
+  }
+
+  .header__top {
+    position: relative;
+  }
+
+  .header__hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    z-index: 10;
+  }
+
+  .header__nav.header__nav--actived {
+    z-index: 2;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  .header__nav--actived .header__link {
+    color: #fff;
   }
 
   .logo__text {
@@ -785,6 +860,10 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+
+  .header__list {
+    /* margin-bottom: 20px; */
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -813,5 +892,13 @@ body {
     width: 80%;
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .header__nav.header__nav--actived {
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .header__list {
+    margin-bottom: 20px;
   }
 }
